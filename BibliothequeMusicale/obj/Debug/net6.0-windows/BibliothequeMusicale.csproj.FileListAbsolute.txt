@@ -22,3 +22,27 @@ C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale\obj\Debug\net6.0-
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.pdb
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.genruntimeconfig.cache
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.exe
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.deps.json
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.runtimeconfig.json
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.pdb
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.csproj.AssemblyReference.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale_MarkupCompile.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale_MarkupCompile.lref
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.g.resources
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.AssemblyInfoInputs.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.AssemblyInfo.cs
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.csproj.CoreCompileInputs.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.csproj.CopyComplete
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.pdb
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.genruntimeconfig.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.dll

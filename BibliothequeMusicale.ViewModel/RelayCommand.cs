@@ -8,28 +8,23 @@ using System.Windows.Input;
 namespace BibliothequeMusicale
 {
     // ICommand représente une opération de l'application, lancée par un bouton, un menu...
-    public class RelayCommand : ICommand
+    public class RelayCommand : ICommand // Représente une action reconnue par WPF
+                                         // (par exemple suite au clic sur un bouton)
     {
-        private readonly Action _execute; // Réprésente une méthode void()
+        private readonly Action _action; // Représente une méthode void().
 
-        public RelayCommand(Action execute)
+        public RelayCommand(Action action)
         {
-            _execute = execute;
+            _action = action;
         }
 
+        // En spécifiant add et remove, aucune liste de méthodes EventHandler n'est ajoutée à la classe.
         public event EventHandler? CanExecuteChanged
         {
-            add // Méthode exécutée lors de l'abonnement à l'évènement
-            {
-                // VIDE car aucune liste d'abonnés en mémoire
-            }
-            remove // Méthode exécutée lors du désabonnement
-            {
-                // VIDE car aucune liste d'abonnés en mémoire
-            }
+            add { } // Méthode appelée lors de l'abonnement (+=)
+            remove { } // Méthode appelée lors du désabonnement (-=)
         }
 
-        // Détermine si l'opération est disponible (bouton grisé ou non)
         public bool CanExecute(object? parameter)
         {
             return true;
@@ -37,7 +32,7 @@ namespace BibliothequeMusicale
 
         public void Execute(object? parameter)
         {
-            _execute();
+            _action();
         }
     }
 }
