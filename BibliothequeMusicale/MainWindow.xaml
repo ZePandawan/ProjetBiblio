@@ -15,42 +15,67 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <!-- Lignes 1 à 4 et Colonnes 1 à 2 (span): ListBox compositeuralbum -->
-        <ListBox Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="compositeuralbum" ItemsSource="{Binding Albums}" SelectedItem="{Binding Selection}"/>
+		<ListBox Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2"  x:Name="compositeuralbum" ItemsSource="{Binding Albums}" SelectedItem="{Binding Selection}">
+			<ListBox.ItemContainerStyle>
+				<Style TargetType="ListBoxItem">
+					<Setter Property="Background" Value="Transparent"/>
+					<Setter Property="Margin" Value="10"/>
+					<Setter Property="Template">
 
-        <!-- Ligne 5 Colonne 1 à 2 (span) : Boutons Ajouter et Supprimer -->
-        <Button Grid.Row="4" Grid.Column="0" Content="Ajouter"  Command="{Binding AjouterAlbumCommand}"/>
-        <Button Grid.Row="4" Grid.Column="1" Content="Supprimer"  Command="{Binding SupprimerAlbumCommand}"/>
+						<Setter.Value>
+							<ControlTemplate TargetType="ListBoxItem">
+								<Border x:Name="border" Background="lightgray">
+									<ContentPresenter/>
+								</Border>
+								<ControlTemplate.Triggers>
+									<Trigger Property="IsSelected" Value="True">
+										<Setter TargetName="border" Property="Background" Value="cyan" />
+									</Trigger>
+								</ControlTemplate.Triggers>
+							</ControlTemplate>
+						</Setter.Value>
+					</Setter>
+
+				</Style>
+			</ListBox.ItemContainerStyle>
+		</ListBox>
+
+		<!-- Ligne 5 Colonne 1 à 2 (span) : Boutons Ajouter et Supprimer -->
+        <Button Grid.Row="4" Grid.Column="0" Content="Ajouter"  Margin="8" Command="{Binding AjouterAlbumCommand}"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Supprimer" Margin="8" Command="{Binding SupprimerAlbumCommand}"/>
 
         <!-- Ligne 1 Colonne 3 à 5 (span): Texte "Compositeur : " et un champ de texte à remplir -->
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="Compositeur : "/>
-        <TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Margin="8" Text="Compositeur : "/>
+        <TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Margin="8" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
 
         <!-- Ligne 2 Colonne 3 à 5 (span): Texte "Album : " et un champ de texte à remplir -->
-        <TextBlock Grid.Row="1" Grid.Column="2" Text="Album : "/>
-        <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Margin="8" Text="Album : "/>
+        <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="8" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
 
         <!-- Ligne 3 Colonne 3 à 5 (span): Texte "Piste :" et en dessous une ListBox appelée Pistes -->
-        <TextBlock Grid.Row="2" Grid.Column="2" Text="Piste : "/>
-        <ListBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" x:Name="Pistes"/>
+		<StackPanel Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
+			<TextBlock Margin="8" Text="Pistes : "/>
+			<ListBox x:Name="Pistes" Margin="8" Padding="80"/>
+		</StackPanel>
 
         <!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
         <TextBox Grid.Row="3" Grid.Column="2" Text="Nom nouvelle piste"/>
 
         <!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
-        <Button Grid.Row="3" Grid.Column="3" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
+        <Button Grid.Row="3" Grid.Column="3" Margin="8" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
 
         <!-- Ligne 4 Colonne 5: Bouton supprimer -->
-        <Button Grid.Row="3" Grid.Column="4" Content="Supprimer" Command="{Binding SupprimePisteCommand}"/>
+        <Button Grid.Row="3" Grid.Column="4" Margin="8" Content="Supprimer" Command="{Binding SupprimePisteCommand}"/>
 
         <!-- Ligne 5 Colonne 3 à 5: Bouton Ouvrir dans une nouvelle fenêtre -->
-        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Content="Ouvrir dans une nouvelle fenêtre"/>
+        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Margin="8,20,8,8"  Content="Ouvrir dans une nouvelle fenêtre"/>
     </Grid>
 </Window>

@@ -51,7 +51,7 @@ namespace BibliothequeMusicale
 
         public string CompoAlbum
         {
-            get { return $"{_compositeur} {_album}"; }
+            get { return $"{_compositeur}\n{_album}"; }
         }
 
 
