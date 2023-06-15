@@ -14,7 +14,7 @@ namespace BibliothequeMusicale
         public MainViewModel()
         {
 
-            _nouveau = new AlbumViewModel() { Compositeur = "Ziak", Album = "CHROME" };
+            _nouveau = new AlbumViewModel() { Compositeur = "Ziak", Album = "CHROME", Albumimg = "" };
             _albums = new ObservableCollection<AlbumViewModel>();
 
         }
@@ -37,13 +37,21 @@ namespace BibliothequeMusicale
 
         public void Ajouter()
         {
-            if (_nouveau.Album == "" && _nouveau.Compositeur == "") return;
+            if (_nouveau.Albumimg == "")
+            {
+                _nouveau.Albumimg = "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2";
+            }
+            else if (_nouveau.Album == "" && _nouveau.Compositeur == "")
+            {
+                return;
+            }
 
             _albums.Add(_nouveau);
 
             _nouveau = new AlbumViewModel();
             OnPropertyChanged(nameof(Nouveau));
         }
+
 
         public AlbumViewModel? Selection
         {

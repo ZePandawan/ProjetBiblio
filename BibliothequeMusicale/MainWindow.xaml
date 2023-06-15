@@ -29,20 +29,32 @@
 					<Setter Property="Background" Value="Transparent"/>
 					<Setter Property="Margin" Value="10"/>
 					<Setter Property="Template">
-
 						<Setter.Value>
 							<ControlTemplate TargetType="ListBoxItem">
-								<Border x:Name="border" Background="lightgray">
-									<ContentPresenter/>
-								</Border>
+								<Grid>
+									<Border x:Name="border" Background="LightGray">
+										<Grid>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="Auto"/>
+												<!-- Colonne pour l'image -->
+												<ColumnDefinition Width="*"/>
+												<!-- Colonne pour le texte -->
+											</Grid.ColumnDefinitions>
+											<Image Source="{Binding Albumimg}" Width="50" Height="50" Margin="5"/>
+											<!-- Image -->
+											<ContentPresenter Grid.Column="1"/>
+										</Grid>
+									</Border>
+								</Grid>
 								<ControlTemplate.Triggers>
 									<Trigger Property="IsSelected" Value="True">
-										<Setter TargetName="border" Property="Background" Value="cyan" />
+										<Setter TargetName="border" Property="Background" Value="Cyan" />
 									</Trigger>
 								</ControlTemplate.Triggers>
 							</ControlTemplate>
 						</Setter.Value>
 					</Setter>
+
 
 				</Style>
 			</ListBox.ItemContainerStyle>

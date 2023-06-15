@@ -15,11 +15,13 @@ namespace BibliothequeMusicale
     {
         private string _compositeur;
         private string _album;
+        private string _albumimg;
 
         public AlbumViewModel()
         {
             _compositeur = "";
             _album = "";
+            _albumimg = "";
         }
 
         public override string ToString()
@@ -46,6 +48,18 @@ namespace BibliothequeMusicale
             {
                 _album = value;
                 OnPropertyChanged(nameof(Album), nameof(CompoAlbum));
+            }
+        }
+
+        public string Albumimg
+        {
+            get { return _albumimg; }
+            set
+            {
+                _albumimg = value;
+
+                // nameof traduit un identificateur (ici le nom d'une propriété) en string
+                OnPropertyChanged(nameof(Albumimg));
             }
         }
 
