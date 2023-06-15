@@ -1,0 +1,56 @@
+﻿<Window x:Class="BibliothequeMusicale.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BibliothequeMusicale"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Lignes 1 à 4 et Colonnes 1 à 2 (span): ListBox compositeuralbum -->
+        <ListBox Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2" x:Name="compositeuralbum"/>
+
+        <!-- Ligne 5 Colonne 1 à 2 (span) : Boutons Ajouter et Supprimer -->
+        <Button Grid.Row="4" Grid.Column="0" Content="Ajouter"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Supprimer"/>
+
+        <!-- Ligne 1 Colonne 3 à 5 (span): Texte "Compositeur : " et un champ de texte à remplir -->
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Compositeur : "/>
+        <TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3"/>
+
+        <!-- Ligne 2 Colonne 3 à 5 (span): Texte "Album : " et un champ de texte à remplir -->
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Album : "/>
+        <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3"/>
+
+        <!-- Ligne 3 Colonne 3 à 5 (span): Texte "Piste :" et en dessous une ListBox appelée Pistes -->
+        <TextBlock Grid.Row="2" Grid.Column="2" Text="Piste : "/>
+        <ListBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" x:Name="Pistes"/>
+
+        <!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
+        <TextBox Grid.Row="3" Grid.Column="2" Text="Nom nouvelle piste"/>
+
+        <!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
+        <Button Grid.Row="3" Grid.Column="3" Content="Ajouter"/>
+
+        <!-- Ligne 4 Colonne 5: Bouton supprimer -->
+        <Button Grid.Row="3" Grid.Column="4" Content="Supprimer"/>
+
+        <!-- Ligne 5 Colonne 3 à 5: Bouton Ouvrir dans une nouvelle fenêtre -->
+        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Content="Ouvrir dans une nouvelle fenêtre"/>
+    </Grid>
+</Window>
