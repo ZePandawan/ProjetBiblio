@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BibliothequeMusicale",
     "\\BibliothequeMusicale.ViewModel",
     "\\img"
   ],
-  "SelectedNode": "\\BibliothequeMusicale",
+  "SelectedNode": "\\BibliothequeMusicale\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }

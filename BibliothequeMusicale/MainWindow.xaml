@@ -5,89 +5,125 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BibliothequeMusicale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+        Title="Bibliothèque musicale" Height="450" Width="800" Background="Black">
+	<Grid>
+		<Grid.Resources>
+			<Style TargetType="Button">
+				<Setter Property="Background" Value="#1DB954"/>
+				<Setter Property="Foreground" Value="White"/>
+				<Setter Property="Padding" Value="12"/>
+				<Setter Property="Margin" Value="8"/>
+				<Setter Property="FontSize" Value="14"/>
+				<Setter Property="FontFamily" Value="Arial"/>
+			</Style>
 
-        <!-- Lignes 1 à 4 et Colonnes 1 à 2 (span): ListBox compositeuralbum -->
-		<ListBox Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="2"  x:Name="compositeuralbum" ItemsSource="{Binding Albums}" SelectedItem="{Binding Selection}">
-			<ListBox.ItemContainerStyle>
-				<Style TargetType="ListBoxItem">
-					<Setter Property="Background" Value="Transparent"/>
-					<Setter Property="Margin" Value="10"/>
-					<Setter Property="Template">
-						<Setter.Value>
-							<ControlTemplate TargetType="ListBoxItem">
-								<Grid>
-									<Border x:Name="border" Background="LightGray">
-										<Grid>
-											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="Auto"/>
-												<!-- Colonne pour l'image -->
-												<ColumnDefinition Width="*"/>
-												<!-- Colonne pour le texte -->
-											</Grid.ColumnDefinitions>
-											<Image Source="{Binding Albumimg}" Width="50" Height="50" Margin="5"/>
-											<!-- Image -->
-											<ContentPresenter Grid.Column="1"/>
-										</Grid>
-									</Border>
-								</Grid>
-								<ControlTemplate.Triggers>
-									<Trigger Property="IsSelected" Value="True">
-										<Setter TargetName="border" Property="Background" Value="Cyan" />
-									</Trigger>
-								</ControlTemplate.Triggers>
-							</ControlTemplate>
-						</Setter.Value>
-					</Setter>
+			<Style TargetType="TextBlock">
+				<Setter Property="Margin" Value="8"/>
+				<Setter Property="FontSize" Value="14"/>
+				<Setter Property="FontFamily" Value="Arial"/>
+			</Style>
 
+			<Style TargetType="TextBox">
+				<Setter Property="Foreground" Value="White"/>
+				<Setter Property="Margin" Value="8"/>
+				<Setter Property="FontSize" Value="14"/>
+				<Setter Property="FontFamily" Value="Arial"/>
+			</Style>
 
-				</Style>
-			</ListBox.ItemContainerStyle>
-		</ListBox>
+			<Style TargetType="ListBox">
+				<Setter Property="Background" Value="#191414"/>
+				<Setter Property="Foreground" Value="White"/>
+				<Setter Property="Margin" Value="10"/>
+				<Setter Property="BorderThickness" Value="1"/>
+				<Setter Property="BorderBrush" Value="#1DB954"/>
+				<Setter Property="Padding" Value="5"/>
+				<Setter Property="FontSize" Value="14"/>
+				<Setter Property="FontFamily" Value="Arial"/>
+			</Style>
+
+			<Style TargetType="ListBoxItem">
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="Margin" Value="10"/>
+				<Setter Property="Template">
+					<Setter.Value>
+						<ControlTemplate TargetType="ListBoxItem">
+							<Grid>
+								<Border x:Name="border" Background="#191414" BorderBrush="#1DB954" BorderThickness="2" CornerRadius="5">
+									<Grid>
+										<Grid.ColumnDefinitions>
+											<ColumnDefinition Width="Auto"/>
+											<!-- Colonne pour l'image -->
+											<ColumnDefinition Width="*"/>
+											<!-- Colonne pour le texte -->
+										</Grid.ColumnDefinitions>
+										<Image Source="{Binding Albumimg}" Width="50" Height="50" Margin="5"/>
+										<!-- Image -->
+										<ContentPresenter Grid.Column="1"/>
+									</Grid>
+								</Border>
+							</Grid>
+							<ControlTemplate.Triggers>
+								<Trigger Property="IsSelected" Value="True">
+									<Setter TargetName="border" Property="Background" Value="#1DB954" />
+									<Setter TargetName="border" Property="BorderBrush" Value="White" />
+								</Trigger>
+							</ControlTemplate.Triggers>
+						</ControlTemplate>
+					</Setter.Value>
+				</Setter>
+			</Style>
+		</Grid.Resources>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<!-- Lignes 1 à 4 et Colonnes 1 à 2 (span): ListBox compositeuralbum -->
+		<ListBox Grid.Row="0" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="2" x:Name="compositeuralbum" ItemsSource="{Binding Albums}" SelectedItem="{Binding Selection}"/>
 
 		<!-- Ligne 5 Colonne 1 à 2 (span) : Boutons Ajouter et Supprimer -->
-        <Button Grid.Row="4" Grid.Column="0" Content="Ajouter"  Margin="8" Command="{Binding AjouterAlbumCommand}"/>
-        <Button Grid.Row="4" Grid.Column="1" Content="Supprimer" Margin="8" Command="{Binding SupprimerAlbumCommand}"/>
+		<Button Grid.Row="5" Grid.Column="0" Content="Ajouter" Command="{Binding AjouterAlbumCommand}"/>
+		<Button Grid.Row="5" Grid.Column="1" Content="Supprimer" Command="{Binding SupprimerAlbumCommand}"/>
 
-        <!-- Ligne 1 Colonne 3 à 5 (span): Texte "Compositeur : " et un champ de texte à remplir -->
-        <TextBlock Grid.Row="0" Grid.Column="2" Margin="8" Text="Compositeur : "/>
-        <TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Margin="8" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
+		<!-- Ligne 1 Colonne 3 à 5 (span): Texte "Compositeur : " et un champ de texte à remplir -->
+		<TextBlock Grid.Row="0" Grid.Column="2" Foreground="White" Margin="8" Text="Compositeur : "/>
+		<TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <!-- Ligne 2 Colonne 3 à 5 (span): Texte "Album : " et un champ de texte à remplir -->
-        <TextBlock Grid.Row="1" Grid.Column="2" Margin="8" Text="Album : "/>
-        <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="8" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
+		<!-- Ligne 2 Colonne 3 à 5 (span): Texte "Album : " et un champ de texte à remplir -->
+		<TextBlock Grid.Row="1" Grid.Column="2" Foreground="White" Margin="8" Text="Album : "/>
+		<TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <!-- Ligne 3 Colonne 3 à 5 (span): Texte "Piste :" et en dessous une ListBox appelée Pistes -->
-		<StackPanel Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Orientation="Vertical">
-			<TextBlock Margin="8" Text="Pistes : "/>
-			<ListBox x:Name="Pistes" Margin="8" Padding="80"/>
-		</StackPanel>
+		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "URL de l'image : " et un champ de texte à remplir -->
+		<TextBlock Grid.Row="2" Grid.Column="2" Foreground="White" Margin="8" Text="URL de l'image : "/>
+		<TextBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Albumimg, UpdateSourceTrigger=PropertyChanged}"/>
 
-        <!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
-        <TextBox Grid.Row="3" Grid.Column="2" Text="Nom nouvelle piste"/>
+		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "Pistes :" et en dessous une ListBox appelée Pistes -->
+		<TextBlock Grid.Row="3" Grid.Column="2" Margin="8" Foreground="White" Text="Pistes : "/>
+		<ListBox x:Name="Pistes" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"/>
 
-        <!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
-        <Button Grid.Row="3" Grid.Column="3" Margin="8" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
+		<!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
+		<TextBox Grid.Row="4" Grid.Column="2" Foreground="Black" Text="Nom nouvelle piste"/>
 
-        <!-- Ligne 4 Colonne 5: Bouton supprimer -->
-        <Button Grid.Row="3" Grid.Column="4" Margin="8" Content="Supprimer" Command="{Binding SupprimePisteCommand}"/>
+		<!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
+		<Button Grid.Row="4" Grid.Column="3" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
 
-        <!-- Ligne 5 Colonne 3 à 5: Bouton Ouvrir dans une nouvelle fenêtre -->
-        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Margin="8,20,8,8"  Content="Ouvrir dans une nouvelle fenêtre"/>
-    </Grid>
+		<!-- Ligne 4 Colonne 5: Bouton supprimer -->
+		<Button Grid.Row="4" Grid.Column="4" Content="Supprimer" Command="{Binding SupprimePisteCommand}"/>
+
+		<!-- Ligne 5 Colonne 3 à 5: Bouton Ouvrir dans une nouvelle fenêtre -->
+		<Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Content="Ouvrir dans une nouvelle fenêtre"/>
+	</Grid>
+
 </Window>
