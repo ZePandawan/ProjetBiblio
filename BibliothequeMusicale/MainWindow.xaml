@@ -111,16 +111,16 @@
 
 		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "Pistes :" et en dessous une ListBox appelée Pistes -->
 		<TextBlock Grid.Row="3" Grid.Column="2" Margin="8" Foreground="White" Text="Pistes : "/>
-		<ListBox x:Name="Pistes" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"/>
+        <ListBox x:Name="piste" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"  ItemsSource="{Binding Pistes}" SelectedItem="{Binding Pisteselection}"/>
 
 		<!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
-		<TextBox Grid.Row="4" Grid.Column="2" Foreground="Black" Text="Nom nouvelle piste"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Foreground="Black" Text="{Binding Nouvelpiste.Piste, UpdateSourceTrigger=PropertyChanged}"/>
 
 		<!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
 		<Button Grid.Row="4" Grid.Column="3" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
 
 		<!-- Ligne 4 Colonne 5: Bouton supprimer -->
-		<Button Grid.Row="4" Grid.Column="4" Content="Supprimer" Command="{Binding SupprimePisteCommand}"/>
+		<Button Grid.Row="4" Grid.Column="4" Content="Supprimer" Command="{Binding SupprimerPisteCommand}"/>
 
 		<!-- Ligne 5 Colonne 3 à 5: Bouton Ouvrir dans une nouvelle fenêtre -->
 		<Button Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3" Content="Ouvrir dans une nouvelle fenêtre"/>

@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\edashura\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\edashura\\.nuget\\packages"
+      "C:\\Users\\Valentin\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Valentin\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

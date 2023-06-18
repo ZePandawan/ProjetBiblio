@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edashura\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {}
+    "C:\\Users\\Valentin\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edashura\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {
+    "C:\\Users\\Valentin\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edashura\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
+        "projectUniqueName": "C:\\Users\\Valentin\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
         "projectName": "BibliothequeMusicale.ViewModel",
-        "projectPath": "C:\\Users\\edashura\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\edashura\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edashura\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\obj\\",
+        "projectPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Valentin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Valentin\\Source\\Repos\\ProjetBiblio\\BibliothequeMusicale.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\edashura\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Valentin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

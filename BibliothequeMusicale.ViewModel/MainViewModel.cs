@@ -7,15 +7,19 @@ namespace BibliothequeMusicale
     public class MainViewModel : ViewModelBase
     {
         private readonly ObservableCollection<AlbumViewModel> _albums; // = List<...> + émission d'un évènement à chaque modification
-
+        private readonly ObservableCollection<PisteViewModel> _pistes;
         private AlbumViewModel _nouveau;
         private AlbumViewModel? _selection;
+        private PisteViewModel _nouvelpiste;
+        private PisteViewModel? _pisteselection;
 
         public MainViewModel()
         {
 
             _nouveau = new AlbumViewModel() { Compositeur = "Ziak", Album = "CHROME", Albumimg = "" };
             _albums = new ObservableCollection<AlbumViewModel>();
+            _nouvelpiste = new PisteViewModel() { Piste = "Première musique" };
+            _pistes = new ObservableCollection<PisteViewModel>();
 
         }
 
@@ -24,6 +28,16 @@ namespace BibliothequeMusicale
             get { return _nouveau; }
         }
 
+        public PisteViewModel Nouvelpiste
+        {
+            get { return _nouvelpiste; }
+        }
+
+        public ReadOnlyObservableCollection<PisteViewModel> Pistes
+        {
+            // Depuis l'extérieur, cette collection n'est pas modifiable.
+            get { return new ReadOnlyObservableCollection<PisteViewModel>(_pistes); }
+        }
         public ReadOnlyObservableCollection<AlbumViewModel> Albums
         {
             // Depuis l'extérieur, cette collection n'est pas modifiable.
@@ -64,6 +78,17 @@ namespace BibliothequeMusicale
             }
         }
 
+
+        public PisteViewModel? Pisteselection
+        {
+            get { return _pisteselection; }
+            set
+            {
+                _pisteselection = value;
+                OnPropertyChanged(nameof(Pisteselection));
+            }
+        }
+
         public ICommand SupprimerAlbumCommand
         {
             get { return new RelayCommand(Supprimer); }
@@ -77,6 +102,37 @@ namespace BibliothequeMusicale
 
                 // Après suppression, vide la sélection.
                 Selection = null;
+            }
+        }
+        public ICommand AjouterPisteCommand
+        {
+            get { return new RelayCommand(AjouterPiste); }
+        }
+
+        public void AjouterPiste()
+        {
+            if (_selection != null)
+            {
+                _pistes.Add(_nouvelpiste);
+                _nouvelpiste = new PisteViewModel();
+                OnPropertyChanged(nameof(Nouvelpiste));
+            }
+        }
+
+        // Méthode pour supprimer une piste de l'album sélectionné
+        public ICommand SupprimerPisteCommand
+        {
+            get { return new RelayCommand(SupprimerPiste); }
+        }
+
+        public void SupprimerPiste()
+        {
+            if (_selection != null && _pisteselection != null)
+            {
+                _pistes.Remove(_pisteselection);
+
+                // Après suppression, vide la sélection.
+                Pisteselection = null;
             }
         }
     }
