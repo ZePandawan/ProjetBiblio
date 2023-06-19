@@ -23,8 +23,13 @@ namespace BibliothequeMusicale
                 _piste = value;
 
                 // nameof traduit un identificateur (ici le nom d'une propriété) en string
-                OnPropertyChanged(nameof(Piste));
+                OnPropertyChanged(nameof(Piste), nameof(_piste));
             }
+        }
+
+        public override string ToString()
+        {
+            return _piste;
         }
     }
 }

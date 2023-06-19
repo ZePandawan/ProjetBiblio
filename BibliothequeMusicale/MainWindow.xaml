@@ -111,7 +111,7 @@
 
 		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "Pistes :" et en dessous une ListBox appelée Pistes -->
 		<TextBlock Grid.Row="3" Grid.Column="2" Margin="8" Foreground="White" Text="Pistes : "/>
-        <ListBox x:Name="piste" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"  ItemsSource="{Binding Pistes}" SelectedItem="{Binding Pisteselection}"/>
+        <ListBox x:Name="piste" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"  ItemsSource="{Binding Selection.Pistes}" SelectedItem="{Binding Pisteselection}"/>
 
 		<!-- Ligne 4 Colonne 3 : Champ de texte à remplir avec préinscrit "Nom nouvelle piste" -->
         <TextBox Grid.Row="4" Grid.Column="2" Foreground="Black" Text="{Binding Nouvelpiste.Piste, UpdateSourceTrigger=PropertyChanged}"/>

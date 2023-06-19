@@ -1,5 +1,7 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace BibliothequeMusicale
@@ -15,12 +17,10 @@ namespace BibliothequeMusicale
 
         public MainViewModel()
         {
-
             _nouveau = new AlbumViewModel() { Compositeur = "Ziak", Album = "CHROME", Albumimg = "" };
             _albums = new ObservableCollection<AlbumViewModel>();
             _nouvelpiste = new PisteViewModel() { Piste = "Première musique" };
             _pistes = new ObservableCollection<PisteViewModel>();
-
         }
 
         public AlbumViewModel Nouveau
@@ -113,7 +113,7 @@ namespace BibliothequeMusicale
         {
             if (_selection != null)
             {
-                _pistes.Add(_nouvelpiste);
+                _selection.Pistes.Add(_nouvelpiste);
                 _nouvelpiste = new PisteViewModel();
                 OnPropertyChanged(nameof(Nouvelpiste));
             }
@@ -129,11 +129,12 @@ namespace BibliothequeMusicale
         {
             if (_selection != null && _pisteselection != null)
             {
-                _pistes.Remove(_pisteselection);
+                _selection.Pistes.Remove(_pisteselection);
 
                 // Après suppression, vide la sélection.
                 Pisteselection = null;
             }
         }
+
     }
 }
