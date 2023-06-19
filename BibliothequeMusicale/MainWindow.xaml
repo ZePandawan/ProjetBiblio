@@ -99,15 +99,15 @@
 
 		<!-- Ligne 1 Colonne 3 à 5 (span): Texte "Compositeur : " et un champ de texte à remplir -->
 		<TextBlock Grid.Row="0" Grid.Column="2" Foreground="White" Margin="8" Text="Compositeur : "/>
-		<TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Foreground="Black" Text="{Binding Nouveau.Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
 
 		<!-- Ligne 2 Colonne 3 à 5 (span): Texte "Album : " et un champ de texte à remplir -->
 		<TextBlock Grid.Row="1" Grid.Column="2" Foreground="White" Margin="8" Text="Album : "/>
-		<TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Foreground="Black" Text="{Binding Nouveau.Album, UpdateSourceTrigger=PropertyChanged}"/>
 
 		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "URL de l'image : " et un champ de texte à remplir -->
 		<TextBlock Grid.Row="2" Grid.Column="2" Foreground="White" Margin="8" Text="URL de l'image : "/>
-		<TextBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Text="{Binding Nouveau.Albumimg, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="3" Foreground="Black" Text="{Binding Nouveau.Albumimg, UpdateSourceTrigger=PropertyChanged}"/>
 
 		<!-- Ligne 3 Colonne 3 à 5 (span): Texte "Pistes :" et en dessous une ListBox appelée Pistes -->
 		<TextBlock Grid.Row="3" Grid.Column="2" Margin="8" Foreground="White" Text="Pistes : "/>

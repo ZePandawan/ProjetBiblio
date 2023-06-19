@@ -111,6 +111,10 @@ namespace BibliothequeMusicale
 
         public void AjouterPiste()
         {
+            if (_nouvelpiste.Piste == "")
+            {
+                return;
+            }
             if (_selection != null)
             {
                 _selection.Pistes.Add(_nouvelpiste);
