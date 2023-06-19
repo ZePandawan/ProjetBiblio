@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {}
+    "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\Projet\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {
+    "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\Projet\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
+        "projectUniqueName": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\Projet\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
         "projectName": "BibliothequeMusicale.ViewModel",
-        "projectPath": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
+        "projectPath": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\Projet\\BibliothequeMusicale.ViewModel\\BibliothequeMusicale.ViewModel.csproj",
         "packagesPath": "C:\\Users\\Vincent Reix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\BibliothequeMusicale.ViewModel\\obj\\",
+        "outputPath": "C:\\Users\\Vincent Reix\\Desktop\\IA2R 4A\\IHM\\Projet\\BibliothequeMusicale.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vincent Reix\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -20,9 +20,16 @@ namespace BibliothequeMusicale
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly MainViewModel _vm;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            _vm = new MainViewModel();
+
+            // Utilise l'objet MainViewModel pour les liaisons de données.
+            DataContext = _vm;
         }
     }
 }

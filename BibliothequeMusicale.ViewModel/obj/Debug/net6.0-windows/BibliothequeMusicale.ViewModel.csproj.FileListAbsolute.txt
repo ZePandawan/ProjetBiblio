@@ -10,3 +10,51 @@ C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale.ViewModel\obj\Deb
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.ViewModel.dll
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.ViewModel.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.deps.json
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.AssemblyReference.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfoInputs.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfo.cs
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.ViewModel.dll
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\edashura\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\source\repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.deps.json
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.AssemblyReference.cache
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfoInputs.cache
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfo.cs
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Valentin\source\repos\ZePandawan\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.deps.json
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.AssemblyReference.cache
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfoInputs.cache
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfo.cs
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.ViewModel.dll
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Valentin\Source\Repos\ProjetBiblio\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.ViewModel.dll
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.deps.json
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\bin\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.AssemblyReference.cache
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfoInputs.cache
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.AssemblyInfo.cs
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.dll
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\refint\BibliothequeMusicale.ViewModel.dll
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\BibliothequeMusicale.ViewModel.pdb
+C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale.ViewModel\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.ViewModel.dll
