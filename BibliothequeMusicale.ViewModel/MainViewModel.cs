@@ -1,22 +1,30 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
 
 namespace BibliothequeMusicale
 {
+    public interface IMainView
+    {
+        void Fenetre(AlbumViewModel? Selection);
+    }
+
     public class MainViewModel : ViewModelBase
     {
-        private readonly ObservableCollection<AlbumViewModel> _albums; // = List<...> + émission d'un évènement à chaque modification
+        private readonly IMainView _view;
+        private readonly ObservableCollection<AlbumViewModel> _albums;
         private readonly ObservableCollection<PisteViewModel> _pistes;
         private AlbumViewModel _nouveau;
         private AlbumViewModel? _selection;
         private PisteViewModel _nouvelpiste;
         private PisteViewModel? _pisteselection;
 
-        public MainViewModel()
+        public MainViewModel(IMainView view)
         {
+            _view = view;
             _nouveau = new AlbumViewModel() { Compositeur = "Ziak", Album = "CHROME", Albumimg = "" };
             _albums = new ObservableCollection<AlbumViewModel>();
             _nouvelpiste = new PisteViewModel() { Piste = "Première musique" };
@@ -35,12 +43,11 @@ namespace BibliothequeMusicale
 
         public ReadOnlyObservableCollection<PisteViewModel> Pistes
         {
-            // Depuis l'extérieur, cette collection n'est pas modifiable.
             get { return new ReadOnlyObservableCollection<PisteViewModel>(_pistes); }
         }
+
         public ReadOnlyObservableCollection<AlbumViewModel> Albums
         {
-            // Depuis l'extérieur, cette collection n'est pas modifiable.
             get { return new ReadOnlyObservableCollection<AlbumViewModel>(_albums); }
         }
 
@@ -51,7 +58,6 @@ namespace BibliothequeMusicale
 
         public void Ajouter()
         {
-            
             if (_nouveau.Album == "" && _nouveau.Compositeur == "")
             {
                 return;
@@ -67,7 +73,6 @@ namespace BibliothequeMusicale
             OnPropertyChanged(nameof(Nouveau));
         }
 
-
         public AlbumViewModel? Selection
         {
             get { return _selection; }
@@ -77,7 +82,6 @@ namespace BibliothequeMusicale
                 OnPropertyChanged(nameof(Selection));
             }
         }
-
 
         public PisteViewModel? Pisteselection
         {
@@ -99,11 +103,10 @@ namespace BibliothequeMusicale
             if (_selection != null)
             {
                 _albums.Remove(_selection);
-
-                // Après suppression, vide la sélection.
                 Selection = null;
             }
         }
+
         public ICommand AjouterPisteCommand
         {
             get { return new RelayCommand(AjouterPiste); }
@@ -123,7 +126,6 @@ namespace BibliothequeMusicale
             }
         }
 
-        // Méthode pour supprimer une piste de l'album sélectionné
         public ICommand SupprimerPisteCommand
         {
             get { return new RelayCommand(SupprimerPiste); }
@@ -134,11 +136,21 @@ namespace BibliothequeMusicale
             if (_selection != null && _pisteselection != null)
             {
                 _selection.Pistes.Remove(_pisteselection);
-
-                // Après suppression, vide la sélection.
                 Pisteselection = null;
             }
         }
 
+        public ICommand OuvrirFenetreCommand
+        {
+            get { return new RelayCommand(OuvrirFenetre); }
+        }
+
+        public void OuvrirFenetre()
+        {
+            if (Selection != null)
+            {
+                _view.Fenetre(Selection);
+            }
+        }
     }
 }

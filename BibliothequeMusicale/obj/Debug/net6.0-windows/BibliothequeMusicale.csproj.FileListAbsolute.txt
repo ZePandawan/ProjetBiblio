@@ -118,3 +118,5 @@ C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale\obj\Debug\
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.pdb
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale\obj\Debug\net6.0-windows\BibliothequeMusicale.genruntimeconfig.cache
 C:\Users\Vincent Reix\Desktop\IA2R 4A\IHM\Projet\BibliothequeMusicale\obj\Debug\net6.0-windows\ref\BibliothequeMusicale.dll
+C:\Users\Valentin\source\repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\FenetreAlbum.g.cs
+C:\Users\Valentin\source\repos\ProjetBiblio\BibliothequeMusicale\obj\Debug\net6.0-windows\FenetreAlbum.baml
