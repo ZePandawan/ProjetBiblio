@@ -18,7 +18,18 @@
         </Grid.ColumnDefinitions>
         <TextBox Grid.Row="0" Grid.Column="0" Foreground="Black" Text="{Binding Albums, UpdateSourceTrigger=PropertyChanged}"/>
         <TextBlock Grid.Row="1" Grid.Column="0" Margin="8" Foreground="Black" Text="Pistes : "/>
-        <ListBox x:Name="piste" Grid.Row="2" Grid.Column="0" Margin="8" Padding="50"  ItemsSource="{Binding Pistes}" SelectedItem="{Binding Pisteselection}"/>
+        <ListBox x:Name="piste" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Margin="8" Padding="50"
+         ItemsSource="{Binding Pistes}" SelectedItem="{Binding Pisteselection}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding NumPiste}" FontWeight="Bold" />
+                        <TextBlock Text=" - " />
+                        <TextBlock Text="{Binding Piste}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
     
 </Window>

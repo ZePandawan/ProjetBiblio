@@ -120,6 +120,7 @@ namespace BibliothequeMusicale
             }
             if (_selection != null)
             {
+                _nouvelpiste.NumPiste = _selection.Pistes.Count + 1;
                 _selection.Pistes.Add(_nouvelpiste);
                 _nouvelpiste = new PisteViewModel();
                 OnPropertyChanged(nameof(Nouvelpiste));
@@ -136,6 +137,10 @@ namespace BibliothequeMusicale
             if (_selection != null && _pisteselection != null)
             {
                 _selection.Pistes.Remove(_pisteselection);
+                for (int i = 0; i < _selection.Pistes.Count; i++)
+                {
+                    _selection.Pistes[i].NumPiste = i + 1;
+                }
                 Pisteselection = null;
             }
         }

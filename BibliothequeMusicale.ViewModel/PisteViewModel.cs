@@ -9,6 +9,7 @@ namespace BibliothequeMusicale
     public class PisteViewModel : ViewModelBase
     {
         private string _piste;
+        private int _numPiste;
 
         public PisteViewModel()
         {
@@ -24,6 +25,15 @@ namespace BibliothequeMusicale
 
                 // nameof traduit un identificateur (ici le nom d'une propriété) en string
                 OnPropertyChanged(nameof(Piste), nameof(_piste));
+            }
+        }
+        public int NumPiste
+        {
+            get { return _numPiste; }
+            set
+            {
+                _numPiste = value;
+                OnPropertyChanged(nameof(NumPiste));
             }
         }
 
