@@ -90,6 +90,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <Image Source="{Binding Albumimg}" Width="50" Height="50" Margin="5"/>
             <TextBox Foreground="White" Text="{Binding Album, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox Foreground="White" Text="{Binding Compositeur, UpdateSourceTrigger=PropertyChanged}"/>
         </StackPanel>
