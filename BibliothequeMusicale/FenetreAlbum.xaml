@@ -111,9 +111,9 @@
         <TextBox Grid.Row="4" Grid.Column="0" Foreground="White" Text="{Binding Nouvelpiste.Piste, UpdateSourceTrigger=PropertyChanged}"/>
 
         <!-- Ligne 4 Colonne 4 : Bouton Ajouter -->
-        <Button Grid.Row="4" Grid.Column="1" Content="Ajouter" Command="{Binding AjouterPisteCommand}"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Ajouter" Command="{Binding AjouterPisteCommandFenetre}"/>
 
         <!-- Ligne 4 Colonne 5: Bouton supprimer -->
-        <Button Grid.Row="4" Grid.Column="2" Content="Supprimer" Command="{Binding SupprimerPisteCommand}"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="Supprimer" Command="{Binding SupprimerPisteCommandFenetre}"/>
     </Grid>
 </Window>

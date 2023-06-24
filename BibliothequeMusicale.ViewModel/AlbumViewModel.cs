@@ -4,11 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
-
+using System.Windows.Input;
 
 namespace BibliothequeMusicale
 {
@@ -20,6 +21,9 @@ namespace BibliothequeMusicale
         private string _album;
         private string _albumimg;
         private ObservableCollection<PisteViewModel> _pistes;
+        private PisteViewModel _nouvelpiste;
+        private PisteViewModel? _pisteselection;
+
 
         public AlbumViewModel()
         {
@@ -27,6 +31,7 @@ namespace BibliothequeMusicale
             _album = "";
             _albumimg = "";
             _pistes = new ObservableCollection<PisteViewModel>();
+            _nouvelpiste = new PisteViewModel() { Piste = "Première musique" };
         }
 
         public override string ToString()
@@ -83,7 +88,7 @@ namespace BibliothequeMusicale
             }
         }
 
-        
+
 
         /*public void AjouterPiste(PisteViewModel piste)
         {
@@ -95,5 +100,57 @@ namespace BibliothequeMusicale
             
         }
         */
+
+
+        public PisteViewModel Nouvelpiste
+        {
+            get { return _nouvelpiste; }
+        }
+
+        public ICommand AjouterPisteCommandFenetre
+        {
+            get { return new RelayCommand(AjouterPisteFenetre); }
+        }
+
+        public void AjouterPisteFenetre()
+        {
+            if (_nouvelpiste.Piste == "")
+            {
+                return;
+            }
+
+            _nouvelpiste.NumPiste = Pistes.Count + 1;
+            Pistes.Add(_nouvelpiste);
+            _nouvelpiste = new PisteViewModel();
+            OnPropertyChanged(nameof(Nouvelpiste));
+        }
+
+        public ICommand SupprimerPisteCommandFenetre
+        {
+            get { return new RelayCommand(SupprimerPisteFenetre); }
+        }
+
+        public PisteViewModel? Pisteselection
+        {
+            get { return _pisteselection; }
+            set
+            {
+                _pisteselection = value;
+                OnPropertyChanged(nameof(Pisteselection));
+            }
+        }
+
+        public void SupprimerPisteFenetre()
+        {
+            if (_pisteselection != null)
+            {
+                Pistes.Remove(_pisteselection);
+                for (int i = 0; i < Pistes.Count; i++)
+                {
+                    Pistes[i].NumPiste = i + 1;
+                }
+                Pisteselection = null;
+            }
+        }
     }
 }
